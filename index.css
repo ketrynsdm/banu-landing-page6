@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topbar{
+    position: relative;
+    background-color: #ff914d;
+    width: calc(100% - 96px);
+    padding: 0px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.topbar .logo{
+    width: 65px;
+}
+
+.topbar .links{
+    display: flex;
+    align-items: center;
+}
+
+.topbar .links .menu-full{
+    margin-left: 20px;
+}
+
+.topbar .links .menu-full a{
+    padding: 2px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.topbar .dropdown-content{
+    display: none;
+    background-color: #ffffff;
+    width: calc(100vw - 50px);
+    position: absolute;
+    top: 55px;
+    left: -247px;
+    /* display: flex;
+    justify-content: space-around;
+    flex-direction: row; */
+    padding: 25px;
+}
+
+.topbar .link-menu{
+    color: #ff914d;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.column{
+    width: 33%;
+}
+.topbar .login{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.topbar .links .dropbtn {
+    padding: 2px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ff914d;
+    border: none;
+    height: 54px;
+    cursor: pointer; /*inpede do txt sai da caixa*/
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255 145 77 / 26%);
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;  /* Não deixa que o texto saia da caixa*/
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.topbar .column a {
+    color: #ffbd56 !important;
+    transition: 0.5s;
+}
+
+.topbar .column a:hover{
+    color: #ff914d !important;
+}
+
+.topbar .menu .dropbtn {
+    padding: 2px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ff914d;
+    border: none;
+    height: 54px;
+    cursor: pointer;
+}
+
+.topbar .menu {
+    display: none;
+}
+
+@media screen and (max-width: 700px) { /*Imagens*/
+    .topbar .links .menu-full{
+        display: none;
+}
+    .topbar .login{
+        display: none;
+    }
+    .topbar .menu {
+        display: block;
+    }
+}
