@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
 .login{
     display: flex;
     position: relative;

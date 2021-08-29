@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
 .topbar{
     position: relative;
     background-color: #ff914d;
