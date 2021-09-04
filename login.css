@@ -28,13 +28,9 @@ img{
 
 .centro{
     display: inline-block;
-    /* justify-content: center;
-    align-items: center; */
     position: absolute;
     width: 374px;
     height: 512px;
-    /* width: calc(60vw - 374px);
-    height: calc(80vw - 512px); */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0px 5px 8px 0px #a85d2e87;
@@ -112,8 +108,13 @@ button:active{
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 .reativa-senha:hover{
     color: #febd59;
+
 }
 
 .cadastro:hover{
@@ -123,10 +124,35 @@ button:active{
 @media screen and (max-width: 700px) {
     .login {
         display: block;
-        
+        justify-content: center;
+        align-content: center;
     }
-    .centro .seu-login .email .senha .reativa-senha .cadastro {
+    .centro{
+        display: inline-block;
+        position: absolute;
+        width: 375px;
+        height: 412px;
+        margin-top: 98px;
+    }
+    .seu-login {
+        display: block;
+        margin-top: 40px;
+    }
+    .email{
         display: block;
     }
-
+    .senha{
+        display: block;
+        margin-top: 10px;
+    }
+    .reativa-senha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

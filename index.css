@@ -27,11 +27,11 @@
     align-items: center;
 }
 
-.topbar .links .menu-full{
+.topbar .links .menu-flil{
     margin-left: 20px;
 }
 
-.topbar .links .menu-full a{
+.topbar .links .menu-flil a{
     padding: 2px 10px;
     color: #ffffff;
     text-decoration: none;
@@ -46,9 +46,6 @@
     position: absolute;
     top: 55px;
     left: -247px;
-    /* display: flex;
-    justify-content: space-around;
-    flex-direction: row; */
     padding: 25px;
 }
 
@@ -77,7 +74,7 @@
     background-color: #ff914d;
     border: none;
     height: 54px;
-    cursor: pointer; /*inpede do txt sai da caixa*/
+    cursor: pointer;
 }
   
 .dropdown {
@@ -93,7 +90,7 @@
     box-shadow: 0px 8px 16px 0px rgb(255 145 77 / 26%);
     z-index: 1;
     transition: 0.5s;
-    overflow: hidden;  /* Não deixa que o texto saia da caixa*/
+    overflow: hidden;
 }
   
 .dropdown-content a {
@@ -134,14 +131,104 @@
     display: none;
 }
 
-@media screen and (max-width: 700px) { /*Imagens*/
-    .topbar .links .menu-full{
+.informacao{
+    width: 100%;
+    bottom: -194px;
+    background-color: rgba(0, 0, 0, 0.876);
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.part-um, .part-dois{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+
+.part-tres{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 22px;
+    font-family: sans-serif;
+    font-size: 16px;
+} 
+
+.part-um a, .part-dois a, .part-tres a{
+    display: flex;
+    color: #f1f1f1; 
+    flex-direction: column; 
+    text-decoration: none;
+    padding: 3px;
+}
+
+.part-um a:hover, .part-dois a:hover, .part-tres a:hover{
+    transition: 0.5s;
+    color: #ff914d;
+}
+
+.celular{
+    height: 400px;
+    padding: 20px 70px;
+}
+
+.row{
+    position: absolute;
+    left: 66px;
+    bottom: 35px;
+    width: calc(100% - 110px);
+    padding: 0px 381px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+hr{
+    width: 65%;
+    color: white;
+}
+
+.rede{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 5px;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .topbar .links .menu-flil{
         display: none;
 }
-    .topbar .login{
+    .topbar .login {
         display: none;
     }
     .topbar .menu {
         display: block;
+        flex-direction: column; 
+    }
+    .informacao {
+        flex-direction: column;
+    }
+    .celular{
+        height: 200px;
+        width: 100px;
+        padding: 20px 20px;
     }
 }
+    
+
