@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ff914d;
+    width: 100%;
+    height: 100vh;
+}
+
+img{
+    width: 100px;
+    height: 80px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.centro{
+    display: inline-block;
+    position: absolute;
+    width: 374px;
+    height: 512px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 0px #a85d2e87;
+}
+
+.seu-login{
+    display: flex;
+    color: #ff914d;
+    margin-top: 85px;
+    margin-left: 110px; 
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.email{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 50px;
+    margin-left: 63px;
+    border-radius: 30px;
+    border-color: #ff914d;
+    text-align: center;
+}
+
+.senha{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 63px;
+    border-radius: 30px; 
+    border-color: #ff914d;
+    text-align: center;
+}
+
+button{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 63px;
+    border-radius: 30px; 
+    text-align: center;
+    color: white;
+    background-color: #ff914d;
+    box-shadow: 0px 5px 8px 0px #ff914d87;
+    border: none;    
+}
+
+button:hover{
+    color: #febd59;
+    background-color: white;
+}
+
+button:active{
+    color: white;
+    background-color: #febd59;
+}
+
+.reativa-senha{
+    display: flex;
+    justify-content: center;
+    color: #ff914d;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadastro{
+    display: flex;
+    color: #ff914d;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.reativa-senha:hover{
+    color: #febd59;
+
+}
+
+.cadastro:hover{
+    color: #febd59;
+}
+
+@media screen and (max-width: 700px) {
+    .login {
+        display: block;
+        justify-content: center;
+        align-content: center;
+    }
+    .centro{
+        display: inline-block;
+        position: absolute;
+        width: 375px;
+        height: 412px;
+        margin-top: 98px;
+    }
+    .seu-login {
+        display: block;
+        margin-top: 40px;
+    }
+    .email{
+        display: block;
+    }
+    .senha{
+        display: block;
+        margin-top: 10px;
+    }
+    .reativa-senha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cadastro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

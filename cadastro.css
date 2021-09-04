@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+.login{
+    display: flex;
+    position: relative;
+    background-color: #ff914d;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+    height: 80px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.centro{
+    display: inline-block;
+    position: absolute;
+    width: 374px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 0px #a85d2e87;
+}
+
+.seu-cadastro{
+    display: flex;
+    color: #ff914d;
+    margin-top: 55px;
+    margin-left: 95px; 
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cpf{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: calc(50% - 132px);
+    border-radius: 30px;
+    border-color: #ff914d;
+    text-align: center;
+}
+
+.nome{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: calc(50% - 132px);
+    border-radius: 30px; 
+    border-color: #ff914d;
+    text-align: center;
+}
+
+.email{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: calc(50% - 132px);
+    border-radius: 30px; 
+    border-color: #ff914d;
+    text-align: center;
+}
+
+.span{
+    display: flex;
+    text-align: justify;
+
+    
+}
+
+button{
+    display: inline-block;
+    width: 264px;
+    height: 45px;
+    border-radius: 30px; 
+    text-align: center;
+    color: white;
+    background-color: #ff914d;
+    margin-left: calc(50% - 132px);
+    box-shadow: 0px 5px 8px 0px #ff914d87;
+    border: none;  
+    
+}
+
+button:hover{
+    color: #febd59;
+    background-color: white;
+}
+
+button:active{
+    color: white;
+    background-color: #febd59;
+}
+
+.reativa-senha{
+    display: flex;
+    color: #ff914d;
+    margin-top: 35px;
+    margin-left: 120px; 
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cadastro{
+    display: flex;
+    color: #ff914d;
+    margin-top: 25px;
+    margin-left: 120px; 
+    flex-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.termos {
+    display: block;
+    padding: 30px 36px;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+    .login {
+        display: block;
+        
+    }
+    .termos{
+        display: block;
+    }
+    .centro {
+        margin-top: 90px;
+    }
+}

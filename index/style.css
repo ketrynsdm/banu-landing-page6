@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI';
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    background-color: #3b4f66;
+    padding: 1em 1em;
+    width: 100vw;
+    align-items: center;
+}
+
+
+/*Background que contém o logo e frase de efeito do site*/
+
+.fourbank {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: #ff914d;
+    padding: 1em 1em;
+    color: snow;
+}
+
+.fourbank_segundo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: white;
+    padding: 1em 1em;
+    color: #ff914d;
+}
+
+.fourbank_segundo>p {
+    text-align: center;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 10vh;
+    text-shadow: #a85d2e87 5px 5px 5px;
+}
+
+.fourbank>p {
+    padding-top: 72px;
+    padding-left: 48px;
+    font-size: 58px;
+}
+
+h1 {
+    color: snow;
+    background-color: #ff914d;
+    font-size: 4vh;
+}
+
+.all-browsers {
+    display: grid;
+    background-color: #ff914d;
+}
+
+.all-browsers>h1,
+.browser {
+    margin: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.browser {
+    background: white;
+    grid-row: 1/span 1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #c58156c9;
+}
+
+.browser>h2,
+p {
+    margin: 3px 2px 3px 2px;
+    font-size: 22px;
+}
+
+img {
+    height: 90vh;
+    width: 85vh;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    justify-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#conta-digital,
+#emprestimo,
+#conta-pj,
+#cartao-credito {
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #ca5c17c9;
+    background-color: snow;
+    font-family: Verdana;
+    font-size: 2vh;
+}
+
+#conta-digital>p,
+#emprestimo>p,
+#conta-pj>p,
+#cartao-credito>p {
+    color: rgb(47, 21, 5);
+    padding: 5px 5px 5px 5px;
+    font-size: 2vh;
+}
+
+.imagem_cartaoF4Bank {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: stretch;
+    color: #ff914d;
+    align-items: center;
+}
+
+.imagem_cartaoF4Bank>h3 {
+    font-size: 16vh;
+    font-family: 'Segoe UI';
+    text-align: center;
+    text-shadow: #a85d2e87 5px 5px 5px;
+}
+
+@media screen and (max-width:700px) {
+    * {
+        display: block;
+    }
+    img {
+        height: 32vh;
+        width: 36vh;
+    }
+    .fourbank>p {
+        display: flex;
+        flex-direction: column;
+        font-size: 4vh;
+    }
+    .fourbank_segundo>p {
+        font-size: 4vh;
+    }
+    .all-browsers {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 1em;
+        background-color: lightgray;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .fourbank_segundo {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .fourbank_segundo>p {
+        font-size: 4vh;
+    }
+    .fourbank {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 1em;
+    }
+    .fourbank>p {
+        font-size: 4vh;
+    }
+    .imagem_cartaoF4Bank>h3 {
+        font-size: 3vh;
+    }
+    .imagem_cartaoF4Bank>img {
+        display: none;
+    }
+    .produtos {
+        display: flex;
+        flex-direction: column;
+    }
+    #conta-digital,
+    #emprestimo,
+    #conta-pj,
+    #cartao-credito {
+        margin-top: 6px;
+        margin-bottom: 4px;
+        font-size: 2vh;
+    }
+}
